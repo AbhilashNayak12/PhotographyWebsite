@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/Camel.jpeg" type="image/png">
+  <title>Abhilash Nayak | Photography Portfolio</title>
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Abhilash</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section id="home" class="hero">
+    <h2>Storytelling Photographer</h2>
+    <p>Capturing moments while learning visual storytelling</p>
+    <a href="#gallery" class="btn">View Gallery</a>
+  </section>
+
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a beginner photographer who enjoys capturing everyday moments.
+      This portfolio is a personal project built using HTML, CSS, and JavaScript
+      to demonstrate frontend development skills.
+    </p>
+  </section>
+
+ 
+  <section id="gallery" class="gallery">
+    <h2>My Work</h2>
+
+    <div class="gallery-grid">
+      <img src="./images/beach.jpg" alt="beach">
+      <img src="./images/boat.jpg" alt="boat">
+      <img src="./images/Camel.jpeg" alt="camel">
+      <img src="./images/bird.jpeg" alt="bird">
+      <img src="./images/cars.jpg" alt="cars">
+      <img src="./images/cat.jpeg" alt="cat">
+    </div>
+  </section>
+
+  
+ <form id="contactForm" action="mailto:abhilashnayak1207@gmail.com" method="post" enctype="text/plain">
+  <input type="text" id="name" name="name" placeholder="Your Name" required>
+  <input type="email" id="email" name="email" placeholder="Your Email" required>
+  <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
+
+
+
+  <footer>
+    <p>© 2026 Abhilash. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #f2f2f2;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+h1, h2 {
+  font-weight: 600;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: #0f0f0f;
+  z-index: 1000;
+  border-bottom: 1px solid #222;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+}
+
+.logo {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+}
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("../images/photo1.jpg") center / cover no-repeat;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  max-width: 600px;
+}
+
+.hero p {
+  max-width: 500px;
+  opacity: 0.85;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 10px 25px;
+  background: #ffffff;
+  color: #000;
+  border-radius: 25px;
+  width: fit-content;
+  font-weight: 500;
+}
+
+.about {
+  background: #141414;
+}
+
+.about p {
+  max-width: 700px;
+  opacity: 0.85;
+}
+
+.gallery {
+  background: #0f0f0f;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.04);
+  filter: brightness(1.1);
+}
+
+.contact {
+  background: #141414;
+}
+
+form {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  background: #1f1f1f;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+button {
+  padding: 10px;
+  background: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #0a0a0a;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 5%;
+  }
+
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+}
+
